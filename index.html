@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpaca — Чайный бар</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bubbles-bg" aria-hidden="true">
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="bubble b4"></div>
+    <div class="bubble b5"></div>
+    <div class="bubble b6"></div>
+    <div class="bubble b7"></div>
+    <div class="bubble b8"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo-wrap" href="#" aria-label="Alpaca — на главную">
+        <img src="assets/logo.png" alt="" class="logo-img" onerror="this.style.display='none'">
+        <span class="logo-text">Alpaca</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Основная навигация">
+        <button class="nav-tab active" data-tab="menu">Меню</button>
+        <button class="nav-tab" data-tab="about">О нас</button>
+        <button class="nav-tab" data-tab="gallery">Галерея</button>
+        <button class="nav-tab" data-tab="loyalty">Лояльность</button>
+        <button class="nav-tab" data-tab="contacts">Контакты</button>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
+      <button class="nav-tab active" data-tab="menu">Меню</button>
+      <button class="nav-tab" data-tab="about">О нас</button>
+      <button class="nav-tab" data-tab="gallery">Галерея</button>
+      <button class="nav-tab" data-tab="loyalty">Лояльность</button>
+      <button class="nav-tab" data-tab="contacts">Контакты</button>
+    </nav>
+  </header>
+
+  <main class="main-content">
+
+    <!-- ========== МЕНЮ ========== -->
+    <section class="page active" id="page-menu" aria-label="Меню напитков">
+      <div class="page-inner">
+        <div class="page-hero">
+          <h1 class="page-title">Наше меню</h1>
+          <p class="page-subtitle">Натуральные чаи, нежные молочные смеси и шарики тапиоки</p>
+        </div>
+
+        <div class="menu-category">
+          <div class="category-label">
+            <span class="category-icon" aria-hidden="true">🍵</span>
+            <h2>Чайные</h2>
+          </div>
+          <div class="cards-grid">
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#FFD166,#EF8C2F)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Манго-Жасмин</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">280 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">320 ₽</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#9B5DE5,#F15BB5)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Смородина-Персик</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">280 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">320 ₽</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#4BB8E8,#A8E6CF)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Ваниль-Бабл Гам</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">290 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">330 ₽</span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <div class="category-label">
+            <span class="category-icon" aria-hidden="true">🧋</span>
+            <h2>Чайно-молочные</h2>
+          </div>
+          <div class="cards-grid">
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#56B870,#CDDC50)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Матча-Банан-Ваниль</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">320 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">360 ₽</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#FFCC70,#FFD966)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Персик-Жасмин</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">310 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">350 ₽</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#FF8A80,#FF80AB)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Клубника-Персик</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">320 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">360 ₽</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#43E97B,#38F9D7)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Гуава-Мята</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">320 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">360 ₽</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#66BB6A,#D4E157)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Матча-Лайм</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">310 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">350 ₽</span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <div class="category-label">
+            <span class="category-icon" aria-hidden="true">🥛</span>
+            <h2>Молочные</h2>
+          </div>
+          <div class="cards-grid">
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#B5D5C5,#D8CFC4)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Фисташковое наслаждение</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">350 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">400 ₽</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#FF80AB,#FFE082)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Клубника-Банан-Бабл Гам</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">350 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">390 ₽</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#FFB74D,#FF8A65)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Маракуйя-Манго</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">340 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">380 ₽</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="drink-card">
+              <div class="card-color" style="background: linear-gradient(135deg,#80DEEA,#B2EBF2)"></div>
+              <div class="card-body">
+                <h3 class="drink-name">Дуэт Мята</h3>
+                <div class="drink-sizes">
+                  <div class="size-row"><span class="size-label">300 мл</span><span class="size-price">340 ₽</span></div>
+                  <div class="size-row"><span class="size-label">400 мл</span><span class="size-price">380 ₽</span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== О НАС ========== -->
+    <section class="page" id="page-about" aria-label="О нас">
+      <div class="page-inner about-inner">
+        <div class="about-top">
+          <div class="about-mascot-wrap">
+            <img src="assets/logo.png" alt="Логотип Alpaca" class="mascot-img" onerror="this.outerHTML='<div class=\'mascot-emoji\' aria-hidden=\'true\'>🦙</div>'">
+          </div>
+          <h1 class="page-title">О нас</h1>
+          <p class="page-subtitle">История, рождённая из любви к чаю</p>
+        </div>
+        <div class="about-body">
+          <p class="about-text">Alpaca — это место, где каждый глоток напоминает о мягком облаке и беззаботном летнем дне. Мы появились в 2023 году с простой идеей: дать людям возможность насладиться настоящим азиатским чаем в уютной и тёплой атмосфере.</p>
+          <p class="about-text">Каждый напиток в нашем меню создаётся с любовью. Мы выбираем только натуральные чайные листья, свежие фруктовые пюре и настоящие шарики тапиоки. Никаких концентратов, никаких искусственных красителей — только настоящий вкус, настоящие эмоции.</p>
+          <p class="about-text">Наша лама Альпака стала символом спокойствия и радости. Как и она, мы верим, что жизнь становится лучше, когда у тебя в руках стакан любимого чая в компании хороших людей.</p>
+          <div class="about-badges">
+            <div class="badge">🌿 Натуральные ингредиенты</div>
+            <div class="badge">❤️ Сделано с любовью</div>
+            <div class="badge">✨ С 2023 года</div>
+            <div class="badge">🎋 Тапиока из Тайваня</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ГАЛЕРЕЯ ========== -->
+    <section class="page" id="page-gallery" aria-label="Галерея">
+      <div class="page-inner">
+        <div class="page-hero">
+          <h1 class="page-title">Галерея</h1>
+          <p class="page-subtitle">Загляните к нам — уютно, красиво и вкусно</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item gi-tall">
+            <img src="assets/photos/photo1.jpg" alt="Интерьер Alpaca" loading="lazy">
+            <div class="gallery-overlay"><span>Наш зал</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/photos/photo2.jpg" alt="Напитки Alpaca" loading="lazy">
+            <div class="gallery-overlay"><span>Наши напитки</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/photos/photo3.jpg" alt="Атмосфера Alpaca" loading="lazy">
+            <div class="gallery-overlay"><span>Атмосфера</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/photos/photo4.jpg" alt="Барная стойка Alpaca" loading="lazy">
+            <div class="gallery-overlay"><span>Барная стойка</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/photos/photo5.jpg" alt="Детали интерьера" loading="lazy">
+            <div class="gallery-overlay"><span>Детали</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/photos/photo6.jpg" alt="Гости Alpaca" loading="lazy">
+            <div class="gallery-overlay"><span>Наши гости</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ЛОЯЛЬНОСТЬ ========== -->
+    <section class="page" id="page-loyalty" aria-label="Программа лояльности">
+      <div class="page-inner loyalty-inner">
+        <div class="page-hero">
+          <h1 class="page-title">Программа лояльности</h1>
+          <p class="page-subtitle">Каждый стакан приближает тебя к подарку</p>
+        </div>
+
+        <div class="loyalty-steps">
+          <div class="loyalty-step">
+            <div class="step-num">01</div>
+            <div class="step-icon" aria-hidden="true">📲</div>
+            <h3 class="step-title">Зарегистрируйся</h3>
+            <p class="step-desc">Попроси карту лояльности на кассе или отсканируй QR-код у входа. Регистрация занимает 30 секунд — нужен только номер телефона.</p>
+          </div>
+          <div class="loyalty-step">
+            <div class="step-num">02</div>
+            <div class="step-icon" aria-hidden="true">☕</div>
+            <h3 class="step-title">Накапливай баллы</h3>
+            <p class="step-desc">За каждые 100 ₽ покупки ты получаешь 1 балл. Баллы начисляются сразу после оплаты и видны в твоём профиле.</p>
+          </div>
+          <div class="loyalty-step">
+            <div class="step-num">03</div>
+            <div class="step-icon" aria-hidden="true">🎁</div>
+            <h3 class="step-title">Получай подарки</h3>
+            <p class="step-desc">10 баллов = бесплатный напиток 300 мл на выбор. Баллы не сгорают и не имеют срока действия.</p>
+          </div>
+        </div>
+
+        <h2 class="bonus-title">Дополнительные привилегии</h2>
+        <div class="loyalty-bonus">
+          <div class="bonus-card">
+            <span class="bonus-icon" aria-hidden="true">🎂</span>
+            <div>
+              <strong>Подарок в день рождения</strong>
+              <p>Бесплатный напиток на выбор в течение трёх дней вокруг твоего дня рождения</p>
+            </div>
+          </div>
+          <div class="bonus-card">
+            <span class="bonus-icon" aria-hidden="true">👥</span>
+            <div>
+              <strong>Приведи друга</strong>
+              <p>Ты и твой друг получаете по 5 баллов при его первом визите в Alpaca</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== КОНТАКТЫ ========== -->
+    <section class="page" id="page-contacts" aria-label="Контакты">
+      <div class="page-inner">
+        <div class="page-hero">
+          <h1 class="page-title">Контакты</h1>
+          <p class="page-subtitle">Мы ждём вас каждый день</p>
+        </div>
+        <div class="contacts-grid">
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true">📍</div>
+            <h3>Адрес</h3>
+            <p>ул. Примерная, д. 15<br>г. Москва, 123456</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true">🕐</div>
+            <h3>Часы работы</h3>
+            <p>Пн–Пт: 10:00 – 22:00<br>Сб–Вс: 11:00 – 23:00</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true">📸</div>
+            <h3>Instagram</h3>
+            <p><a href="https://instagram.com/alpaca_bubbletea" target="_blank" rel="noopener noreferrer" class="contact-link">@alpaca_bubbletea</a></p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true">📞</div>
+            <h3>Телефон</h3>
+            <p><a href="tel:+74951234567" class="contact-link">+7 (495) 123-45-67</a></p>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <!-- Замените содержимое этого div на iframe от Яндекс.Карт или Google Maps -->
+          <div class="map-placeholder" role="img" aria-label="Карта расположения">
+            <span class="map-icon" aria-hidden="true">🗺️</span>
+            <p>Карта расположения</p>
+            <small>Вставьте iframe Яндекс.Карт или Google Maps вместо этого блока</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-brand">Alpaca 🦙</span>
+      <span class="footer-copy">© 2024 Alpaca Bubble Tea. Сделано с любовью в России</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
