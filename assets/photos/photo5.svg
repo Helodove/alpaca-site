@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <defs>
+    <radialGradient id="bg5" cx="50%" cy="50%" r="60%">
+      <stop offset="0%"   stop-color="#1A2A3A"/>
+      <stop offset="100%" stop-color="#080E14"/>
+    </radialGradient>
+    <radialGradient id="pearl" cx="35%" cy="30%" r="65%">
+      <stop offset="0%"   stop-color="#6A4030"/>
+      <stop offset="60%"  stop-color="#3A1A10"/>
+      <stop offset="100%" stop-color="#1A0808"/>
+    </radialGradient>
+    <radialGradient id="pearlGlow" cx="35%" cy="30%" r="65%">
+      <stop offset="0%"   stop-color="rgba(255,200,150,0.5)"/>
+      <stop offset="100%" stop-color="rgba(255,150,80,0)"/>
+    </radialGradient>
+    <radialGradient id="liquidGrad" cx="40%" cy="35%" r="70%">
+      <stop offset="0%"   stop-color="#FFA060"/>
+      <stop offset="100%" stop-color="#C06020"/>
+    </radialGradient>
+    <filter id="glow5">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow5sm">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="600" height="450" fill="url(#bg5)"/>
+
+  <!-- Central glow source (light from top-right) -->
+  <ellipse cx="420" cy="60" rx="180" ry="120" fill="rgba(255,180,80,0.12)" filter="url(#glow5)"/>
+  <ellipse cx="420" cy="60" rx="80"  ry="60"  fill="rgba(255,200,120,0.08)"/>
+
+  <!-- Glass of tapioca close-up -->
+  <!-- Glass outline -->
+  <path d="M180,80 L120,400 Q120,415 138,415 L462,415 Q480,415 480,400 L420,80 Z" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <!-- Glass rim -->
+  <ellipse cx="300" cy="80" rx="120" ry="20" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+
+  <!-- Liquid (brown milk tea) -->
+  <path d="M138,415 L175,130 L425,130 L462,415 Q462,415 300,415 Z" fill="url(#liquidGrad)" opacity="0.7"/>
+  <!-- Liquid surface -->
+  <ellipse cx="300" cy="130" rx="125" ry="22" fill="rgba(255,200,130,0.5)"/>
+  <!-- Light on liquid surface -->
+  <ellipse cx="280" cy="125" rx="50"  ry="8"  fill="rgba(255,255,255,0.25)"/>
+
+  <!-- Condensation drops on glass -->
+  <circle cx="175" cy="200" r="3"  fill="rgba(255,255,255,0.25)"/>
+  <circle cx="172" cy="215" r="2"  fill="rgba(255,255,255,0.2)"/>
+  <circle cx="420" cy="230" r="3"  fill="rgba(255,255,255,0.25)"/>
+  <circle cx="424" cy="250" r="2"  fill="rgba(255,255,255,0.2)"/>
+  <circle cx="178" cy="280" r="2.5" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="415" cy="300" r="2"  fill="rgba(255,255,255,0.18)"/>
+
+  <!-- Tapioca pearls (main cluster) -->
+  <!-- Back row (smaller, darker) -->
+  <circle cx="200" cy="385" r="22" fill="url(#pearl)" opacity="0.6"/>
+  <circle cx="248" cy="390" r="20" fill="url(#pearl)" opacity="0.6"/>
+  <circle cx="295" cy="388" r="21" fill="url(#pearl)" opacity="0.6"/>
+  <circle cx="342" cy="392" r="20" fill="url(#pearl)" opacity="0.6"/>
+  <circle cx="390" cy="384" r="22" fill="url(#pearl)" opacity="0.6"/>
+
+  <!-- Middle row -->
+  <circle cx="165" cy="355" r="24" fill="url(#pearl)" opacity="0.8"/>
+  <circle cx="217" cy="358" r="25" fill="url(#pearl)" opacity="0.85"/>
+  <circle cx="268" cy="352" r="24" fill="url(#pearl)" opacity="0.85"/>
+  <circle cx="320" cy="356" r="25" fill="url(#pearl)" opacity="0.85"/>
+  <circle cx="372" cy="353" r="24" fill="url(#pearl)" opacity="0.8"/>
+  <circle cx="422" cy="357" r="23" fill="url(#pearl)" opacity="0.75"/>
+
+  <!-- Front row (brightest) -->
+  <circle cx="190" cy="315" r="26" fill="url(#pearl)"/>
+  <circle cx="246" cy="308" r="28" fill="url(#pearl)"/>
+  <circle cx="300" cy="314" r="27" fill="url(#pearl)"/>
+  <circle cx="354" cy="310" r="27" fill="url(#pearl)"/>
+  <circle cx="408" cy="316" r="25" fill="url(#pearl)"/>
+
+  <!-- Pearl highlights -->
+  <circle cx="182" cy="307" r="8"  fill="url(#pearlGlow)" opacity="0.9"/>
+  <circle cx="238" cy="299" r="9"  fill="url(#pearlGlow)" opacity="0.9"/>
+  <circle cx="292" cy="305" r="8"  fill="url(#pearlGlow)" opacity="0.9"/>
+  <circle cx="346" cy="301" r="8"  fill="url(#pearlGlow)" opacity="0.9"/>
+  <circle cx="400" cy="307" r="7"  fill="url(#pearlGlow)" opacity="0.9"/>
+  <!-- Small shine dot on each front pearl -->
+  <circle cx="180" cy="304" r="4" fill="rgba(255,220,180,0.6)"/>
+  <circle cx="236" cy="296" r="4" fill="rgba(255,220,180,0.6)"/>
+  <circle cx="290" cy="302" r="4" fill="rgba(255,220,180,0.6)"/>
+  <circle cx="344" cy="298" r="4" fill="rgba(255,220,180,0.6)"/>
+  <circle cx="398" cy="304" r="4" fill="rgba(255,220,180,0.6)"/>
+
+  <!-- Straw -->
+  <rect x="358" y="60" width="16" height="280" rx="8" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <!-- Straw inner light -->
+  <rect x="361" y="60" width="5" height="280" rx="4" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Floating pearl in mid-liquid (artistic) -->
+  <circle cx="240" cy="220" r="18" fill="url(#pearl)" opacity="0.5"/>
+  <circle cx="232" cy="213" r="5"  fill="url(#pearlGlow)" opacity="0.6"/>
+  <circle cx="370" cy="195" r="15" fill="url(#pearl)" opacity="0.45"/>
+  <circle cx="363" cy="189" r="4"  fill="url(#pearlGlow)" opacity="0.5"/>
+
+  <!-- Ambient light streaks in liquid -->
+  <line x1="250" y1="135" x2="220" y2="300" stroke="rgba(255,180,80,0.08)" stroke-width="20"/>
+  <line x1="350" y1="135" x2="380" y2="300" stroke="rgba(255,180,80,0.06)" stroke-width="15"/>
+</svg>

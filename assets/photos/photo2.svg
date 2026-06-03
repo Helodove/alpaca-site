@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#D6F0FB"/>
+      <stop offset="100%" stop-color="#B8E4F7"/>
+    </linearGradient>
+    <!-- Cup gradients -->
+    <linearGradient id="cup1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#FF9EC0"/>
+      <stop offset="100%" stop-color="#FF5FA0"/>
+    </linearGradient>
+    <linearGradient id="cup2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#6FD88A"/>
+      <stop offset="100%" stop-color="#3AB860"/>
+    </linearGradient>
+    <linearGradient id="cup3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#FFCF60"/>
+      <stop offset="100%" stop-color="#FF9820"/>
+    </linearGradient>
+    <filter id="drop">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="rgba(0,0,0,0.15)"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="450" fill="url(#bg2)"/>
+
+  <!-- Subtle circles in background -->
+  <circle cx="80"  cy="80"  r="60"  fill="rgba(75,184,232,0.08)"/>
+  <circle cx="520" cy="380" r="80"  fill="rgba(75,184,232,0.07)"/>
+  <circle cx="540" cy="60"  r="40"  fill="rgba(255,183,77,0.10)"/>
+  <circle cx="60"  cy="400" r="50"  fill="rgba(255,100,160,0.08)"/>
+  <circle cx="300" cy="30"  r="55"  fill="rgba(75,184,232,0.06)"/>
+
+  <!-- ─── CUP 1 (pink / strawberry) ─────────── -->
+  <g transform="translate(110, 80)" filter="url(#drop)">
+    <!-- Lid -->
+    <ellipse cx="75" cy="14" rx="62" ry="14" fill="#FFB0D0"/>
+    <rect x="13" y="14" width="124" height="8" rx="2" fill="#FF88BB"/>
+    <!-- Straw -->
+    <rect x="104" y="-80" width="10" height="100" rx="5" fill="white" opacity="0.9"/>
+    <rect x="104" y="-80" width="10" height="50"  rx="5" fill="#FF88BB" opacity="0.8"/>
+    <!-- Cup body -->
+    <path d="M13,22 L0,290 Q0,305 15,305 L135,305 Q150,305 150,290 L137,22 Z" fill="url(#cup1)" opacity="0.92"/>
+    <!-- Milk layer -->
+    <path d="M18,160 L6,290 Q6,300 18,300 L132,300 Q144,300 144,290 L132,160 Z" fill="rgba(255,255,255,0.35)"/>
+    <!-- Bubbles -->
+    <circle cx="35"  cy="270" r="16" fill="rgba(180,30,80,0.85)"/>
+    <circle cx="75"  cy="282" r="14" fill="rgba(180,30,80,0.85)"/>
+    <circle cx="112" cy="268" r="15" fill="rgba(180,30,80,0.85)"/>
+    <circle cx="55"  cy="255" r="12" fill="rgba(180,30,80,0.80)"/>
+    <circle cx="97"  cy="255" r="11" fill="rgba(180,30,80,0.80)"/>
+    <!-- Bubble shine -->
+    <circle cx="31"  cy="264" r="4" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="71"  cy="276" r="4" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="108" cy="262" r="4" fill="rgba(255,255,255,0.35)"/>
+    <!-- Cup highlight -->
+    <path d="M18,22 L13,180" stroke="rgba(255,255,255,0.4)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Label -->
+    <rect x="30" y="100" width="90" height="36" rx="10" fill="rgba(255,255,255,0.55)"/>
+    <text x="75" y="118" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="10" fill="#C02060">Клубника</text>
+    <text x="75" y="130" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="700" font-size="9" fill="#C02060">Персик</text>
+  </g>
+
+  <!-- ─── CUP 2 (green / matcha) ─────────────── -->
+  <g transform="translate(225, 60)" filter="url(#drop)">
+    <!-- Lid -->
+    <ellipse cx="75" cy="14" rx="62" ry="14" fill="#90E4A0"/>
+    <rect x="13" y="14" width="124" height="8" rx="2" fill="#60C870"/>
+    <!-- Straw -->
+    <rect x="62" y="-90" width="10" height="110" rx="5" fill="white" opacity="0.9"/>
+    <rect x="62" y="-90" width="10" height="55"  rx="5" fill="#60C870" opacity="0.8"/>
+    <!-- Cup body -->
+    <path d="M13,22 L0,290 Q0,305 15,305 L135,305 Q150,305 150,290 L137,22 Z" fill="url(#cup2)" opacity="0.92"/>
+    <!-- Milk layer -->
+    <path d="M20,140 L8,290 Q8,300 20,300 L130,300 Q142,300 142,290 L130,140 Z" fill="rgba(255,255,255,0.38)"/>
+    <!-- Bubbles -->
+    <circle cx="38"  cy="270" r="15" fill="rgba(20,100,40,0.85)"/>
+    <circle cx="75"  cy="283" r="14" fill="rgba(20,100,40,0.85)"/>
+    <circle cx="113" cy="268" r="16" fill="rgba(20,100,40,0.85)"/>
+    <circle cx="58"  cy="255" r="11" fill="rgba(20,100,40,0.80)"/>
+    <circle cx="96"  cy="256" r="12" fill="rgba(20,100,40,0.80)"/>
+    <circle cx="34"  cy="264" r="4" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="71"  cy="277" r="4" fill="rgba(255,255,255,0.35)"/>
+    <!-- Cup highlight -->
+    <path d="M18,22 L13,170" stroke="rgba(255,255,255,0.4)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Label -->
+    <rect x="30" y="95" width="90" height="36" rx="10" fill="rgba(255,255,255,0.55)"/>
+    <text x="75" y="113" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="10" fill="#1A6030">Матча</text>
+    <text x="75" y="125" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="700" font-size="9" fill="#1A6030">Банан-Ваниль</text>
+  </g>
+
+  <!-- ─── CUP 3 (yellow / mango) ─────────────── -->
+  <g transform="translate(342, 75)" filter="url(#drop)">
+    <!-- Lid -->
+    <ellipse cx="75" cy="14" rx="62" ry="14" fill="#FFE090"/>
+    <rect x="13" y="14" width="124" height="8" rx="2" fill="#FFCC50"/>
+    <!-- Straw -->
+    <rect x="46" y="-85" width="10" height="105" rx="5" fill="white" opacity="0.9"/>
+    <rect x="46" y="-85" width="10" height="52"  rx="5" fill="#FFCC50" opacity="0.8"/>
+    <!-- Cup body -->
+    <path d="M13,22 L0,290 Q0,305 15,305 L135,305 Q150,305 150,290 L137,22 Z" fill="url(#cup3)" opacity="0.92"/>
+    <!-- Milk layer -->
+    <path d="M20,150 L7,290 Q7,300 20,300 L130,300 Q143,300 143,290 L130,150 Z" fill="rgba(255,255,255,0.36)"/>
+    <!-- Bubbles -->
+    <circle cx="36"  cy="272" r="15" fill="rgba(160,80,0,0.85)"/>
+    <circle cx="75"  cy="283" r="14" fill="rgba(160,80,0,0.85)"/>
+    <circle cx="114" cy="270" r="15" fill="rgba(160,80,0,0.85)"/>
+    <circle cx="57"  cy="257" r="12" fill="rgba(160,80,0,0.80)"/>
+    <circle cx="95"  cy="257" r="11" fill="rgba(160,80,0,0.80)"/>
+    <circle cx="32"  cy="266" r="4" fill="rgba(255,255,255,0.35)"/>
+    <circle cx="71"  cy="277" r="4" fill="rgba(255,255,255,0.35)"/>
+    <!-- Cup highlight -->
+    <path d="M18,22 L13,175" stroke="rgba(255,255,255,0.4)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Label -->
+    <rect x="30" y="98" width="90" height="36" rx="10" fill="rgba(255,255,255,0.55)"/>
+    <text x="75" y="116" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="10" fill="#904000">Манго</text>
+    <text x="75" y="128" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="700" font-size="9" fill="#904000">Жасмин</text>
+  </g>
+</svg>

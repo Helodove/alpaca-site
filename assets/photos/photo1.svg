@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5E6C4"/>
+      <stop offset="100%" stop-color="#EDD8A4"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8A870"/>
+      <stop offset="100%" stop-color="#A8884A"/>
+    </linearGradient>
+    <linearGradient id="win" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E8"/>
+      <stop offset="100%" stop-color="#FFE8A0"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE87A" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFB020" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Wall -->
+  <rect x="0" y="0" width="600" height="800" fill="url(#wall)"/>
+
+  <!-- Floor -->
+  <polygon points="0,560 600,520 600,800 0,800" fill="url(#floor)"/>
+  <!-- Floor planks -->
+  <line x1="0" y1="600" x2="600" y2="568" stroke="#9A7838" stroke-width="1.5" opacity="0.4"/>
+  <line x1="0" y1="640" x2="600" y2="616" stroke="#9A7838" stroke-width="1.5" opacity="0.4"/>
+  <line x1="0" y1="680" x2="600" y2="664" stroke="#9A7838" stroke-width="1.5" opacity="0.4"/>
+  <line x1="0" y1="720" x2="600" y2="712" stroke="#9A7838" stroke-width="1.5" opacity="0.4"/>
+  <line x1="0" y1="760" x2="600" y2="760" stroke="#9A7838" stroke-width="1.5" opacity="0.4"/>
+  <!-- Floor vertical lines -->
+  <line x1="150" y1="560" x2="80"  y2="800" stroke="#9A7838" stroke-width="1" opacity="0.3"/>
+  <line x1="300" y1="540" x2="270" y2="800" stroke="#9A7838" stroke-width="1" opacity="0.3"/>
+  <line x1="450" y1="530" x2="480" y2="800" stroke="#9A7838" stroke-width="1" opacity="0.3"/>
+
+  <!-- Large window -->
+  <rect x="180" y="60" width="240" height="340" rx="8" fill="url(#win)"/>
+  <!-- Window glow -->
+  <ellipse cx="300" cy="240" rx="160" ry="200" fill="url(#lamp)" opacity="0.4"/>
+  <!-- Window frame -->
+  <rect x="180" y="60" width="240" height="340" rx="8" fill="none" stroke="#C8A030" stroke-width="4"/>
+  <line x1="300" y1="60"  x2="300" y2="400" stroke="#C8A030" stroke-width="3"/>
+  <line x1="180" y1="230" x2="420" y2="230" stroke="#C8A030" stroke-width="3"/>
+  <!-- Light rays through window -->
+  <line x1="300" y1="400" x2="150" y2="560" stroke="#FFE890" stroke-width="30" opacity="0.18"/>
+  <line x1="300" y1="400" x2="320" y2="560" stroke="#FFE890" stroke-width="20" opacity="0.14"/>
+  <line x1="300" y1="400" x2="490" y2="580" stroke="#FFE890" stroke-width="15" opacity="0.12"/>
+
+  <!-- Hanging lights - wires -->
+  <line x1="130" y1="0"  x2="130" y2="120" stroke="#8B7040" stroke-width="1.5"/>
+  <line x1="470" y1="0"  x2="470" y2="100" stroke="#8B7040" stroke-width="1.5"/>
+  <line x1="300" y1="0"  x2="300" y2="55"  stroke="#8B7040" stroke-width="1.5"/>
+
+  <!-- Lamp 1 (left) -->
+  <ellipse cx="130" cy="120" rx="28" ry="34" fill="#E8C050" opacity="0.9"/>
+  <ellipse cx="130" cy="115" rx="22" ry="18" fill="#FFE880"/>
+  <circle  cx="130" cy="120" r="36" fill="url(#lamp)" opacity="0.5"/>
+
+  <!-- Lamp 2 (right) -->
+  <ellipse cx="470" cy="100" rx="24" ry="30" fill="#E8C050" opacity="0.9"/>
+  <ellipse cx="470" cy="95"  rx="19" ry="16" fill="#FFE880"/>
+  <circle  cx="470" cy="100" r="30" fill="url(#lamp)" opacity="0.5"/>
+
+  <!-- Left plant (large) -->
+  <rect x="22" y="460" width="28" height="80" rx="4" fill="#7A5830"/>
+  <rect x="18" y="440" width="36" height="16" rx="4" fill="#5A3818"/>
+  <!-- Leaves -->
+  <ellipse cx="36"  cy="420" rx="38" ry="22" fill="#3A7A40" transform="rotate(-30,36,420)"/>
+  <ellipse cx="36"  cy="400" rx="34" ry="18" fill="#4A9050" transform="rotate(20,36,400)"/>
+  <ellipse cx="50"  cy="390" rx="30" ry="16" fill="#3A7A40" transform="rotate(-10,50,390)"/>
+  <ellipse cx="20"  cy="385" rx="26" ry="14" fill="#4A9050" transform="rotate(40,20,385)"/>
+  <ellipse cx="55"  cy="430" rx="22" ry="12" fill="#5AA060" transform="rotate(15,55,430)"/>
+
+  <!-- Right plant (smaller) -->
+  <rect x="548" y="480" width="22" height="60" rx="4" fill="#7A5830"/>
+  <rect x="544" y="462" width="30" height="14" rx="4" fill="#5A3818"/>
+  <ellipse cx="559" cy="442" rx="28" ry="16" fill="#4A9050" transform="rotate(-20,559,442)"/>
+  <ellipse cx="559" cy="428" rx="24" ry="14" fill="#3A7A40" transform="rotate(15,559,428)"/>
+  <ellipse cx="572" cy="450" rx="20" ry="11" fill="#5AA060" transform="rotate(30,572,450)"/>
+
+  <!-- Table 1 (center-left, round) -->
+  <ellipse cx="200" cy="575" rx="80" ry="22" fill="#6A4820" opacity="0.5"/>
+  <ellipse cx="200" cy="570" rx="82" ry="24" fill="#8B5E2C"/>
+  <ellipse cx="200" cy="570" rx="76" ry="18" fill="#A06A32"/>
+  <!-- Table leg -->
+  <rect x="194" y="570" width="12" height="50" rx="4" fill="#6A4820"/>
+  <ellipse cx="200" cy="622" rx="22" ry="7" fill="#5A3818"/>
+
+  <!-- Chair 1 at table -->
+  <ellipse cx="140" cy="606" rx="26" ry="9" fill="#C88A3A" opacity="0.5"/>
+  <ellipse cx="140" cy="603" rx="26" ry="9" fill="#D4943E"/>
+  <rect x="130" y="555" width="8" height="48" rx="3" fill="#8B5E2C"/>
+  <rect x="148" y="555" width="8" height="48" rx="3" fill="#8B5E2C"/>
+  <rect x="126" y="545" width="28" height="14" rx="6" fill="#D4943E"/>
+
+  <!-- Chair 2 at table -->
+  <ellipse cx="262" cy="600" rx="26" ry="9" fill="#C88A3A" opacity="0.5"/>
+  <ellipse cx="262" cy="597" rx="26" ry="9" fill="#D4943E"/>
+  <rect x="252" y="550" width="8" height="47" rx="3" fill="#8B5E2C"/>
+  <rect x="270" y="550" width="8" height="47" rx="3" fill="#8B5E2C"/>
+  <rect x="248" y="540" width="28" height="14" rx="6" fill="#D4943E"/>
+
+  <!-- Cups on table 1 -->
+  <rect x="180" y="546" width="14" height="22" rx="3" fill="white" opacity="0.9"/>
+  <rect x="181" y="560" width="12" height="8" rx="1" fill="#4BB8E8" opacity="0.7"/>
+  <line x1="187" y1="546" x2="192" y2="536" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+
+  <rect x="202" y="548" width="14" height="22" rx="3" fill="white" opacity="0.9"/>
+  <rect x="203" y="562" width="12" height="8" rx="1" fill="#FF80AB" opacity="0.7"/>
+  <line x1="209" y1="548" x2="214" y2="537" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Table 2 (right) -->
+  <ellipse cx="450" cy="565" rx="78" ry="21" fill="#6A4820" opacity="0.5"/>
+  <ellipse cx="450" cy="560" rx="80" ry="23" fill="#8B5E2C"/>
+  <ellipse cx="450" cy="560" rx="74" ry="17" fill="#A06A32"/>
+  <rect x="444" y="560" width="12" height="50" rx="4" fill="#6A4820"/>
+  <ellipse cx="450" cy="612" rx="22" ry="7" fill="#5A3818"/>
+
+  <!-- Chair at table 2 -->
+  <ellipse cx="390" cy="597" rx="24" ry="8" fill="#C88A3A" opacity="0.5"/>
+  <ellipse cx="390" cy="594" rx="24" ry="8" fill="#D4943E"/>
+  <rect x="381" y="548" width="7" height="46" rx="3" fill="#8B5E2C"/>
+  <rect x="398" y="548" width="7" height="46" rx="3" fill="#8B5E2C"/>
+  <rect x="377" y="538" width="28" height="14" rx="6" fill="#D4943E"/>
+
+  <!-- Cup on table 2 -->
+  <rect x="440" y="538" width="14" height="20" rx="3" fill="white" opacity="0.9"/>
+  <rect x="441" y="550" width="12" height="8" rx="1" fill="#56B870" opacity="0.7"/>
+  <line x1="447" y1="538" x2="452" y2="529" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Wall shelf with decor -->
+  <rect x="0" y="290" width="130" height="12" rx="4" fill="#A07840"/>
+  <!-- Small plant on shelf -->
+  <rect x="50" y="270" width="14" height="22" rx="3" fill="#6A4820"/>
+  <rect x="46" y="265" width="22" height="8" rx="3" fill="#5A3818"/>
+  <circle cx="57" cy="254" r="16" fill="#3A7A40"/>
+  <circle cx="57" cy="248" r="12" fill="#4A9050"/>
+  <!-- Small frame 1 -->
+  <rect x="8" y="218" width="46" height="60" rx="4" fill="#D4B060" stroke="#C09030" stroke-width="3"/>
+  <rect x="14" y="224" width="34" height="48" rx="2" fill="#E8D090"/>
+  <!-- Small frame 2 -->
+  <rect x="62" y="228" width="38" height="50" rx="4" fill="#D4B060" stroke="#C09030" stroke-width="3"/>
+  <rect x="67" y="234" width="28" height="38" rx="2" fill="#E8D090"/>
+
+  <!-- Alpaca logo on wall (small, brand mark) -->
+  <circle cx="520" cy="210" r="28" fill="#4BB8E8" opacity="0.85"/>
+  <text x="520" y="218" text-anchor="middle" font-family="sans-serif" font-size="22" fill="white" font-weight="bold">🦙</text>
+
+  <!-- Subtle vignette -->
+  <radialGradient id="vig" cx="50%" cy="50%" r="70%">
+    <stop offset="60%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="rgba(100,70,20,0.25)"/>
+  </radialGradient>
+  <rect x="0" y="0" width="600" height="800" fill="url(#vig)"/>
+</svg>

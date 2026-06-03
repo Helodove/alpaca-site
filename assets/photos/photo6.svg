@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFF3D5"/>
+      <stop offset="100%" stop-color="#FFDFA0"/>
+    </linearGradient>
+    <radialGradient id="sunspot" cx="50%" cy="30%" r="55%">
+      <stop offset="0%"   stop-color="rgba(255,240,160,0.7)"/>
+      <stop offset="100%" stop-color="rgba(255,240,160,0)"/>
+    </radialGradient>
+    <filter id="soft6">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Warm background -->
+  <rect width="600" height="450" fill="url(#bg6)"/>
+  <ellipse cx="300" cy="100" rx="250" ry="150" fill="url(#sunspot)"/>
+
+  <!-- Floor -->
+  <polygon points="0,340 600,310 600,450 0,450" fill="#E8C870" opacity="0.6"/>
+  <!-- Floor lines -->
+  <line x1="0" y1="370" x2="600" y2="348" stroke="rgba(180,130,30,0.25)" stroke-width="1.5"/>
+  <line x1="0" y1="400" x2="600" y2="386" stroke="rgba(180,130,30,0.25)" stroke-width="1.5"/>
+  <line x1="0" y1="430" x2="600" y2="424" stroke="rgba(180,130,30,0.25)" stroke-width="1.5"/>
+
+  <!-- Table -->
+  <ellipse cx="300" cy="345" rx="130" ry="28" fill="#8B5E2C" opacity="0.4"/>
+  <ellipse cx="300" cy="338" rx="132" ry="30" fill="#A07030"/>
+  <ellipse cx="300" cy="338" rx="124" ry="22" fill="#B8804C"/>
+  <!-- Table leg -->
+  <rect x="293" y="338" width="14" height="36" rx="5" fill="#8B5E2C"/>
+  <ellipse cx="300" cy="375" rx="28" ry="8" fill="#7A5020"/>
+
+  <!-- Person 1 (left, female silhouette) -->
+  <!-- Body -->
+  <ellipse cx="145" cy="290" rx="42" ry="22" fill="#E87060" opacity="0.9"/>
+  <!-- Head -->
+  <circle cx="145" cy="222" r="38" fill="#F5C8A0"/>
+  <!-- Hair -->
+  <path d="M107,215 Q108,170 145,165 Q182,170 183,215 Q175,198 145,195 Q115,198 107,215 Z" fill="#6A3010"/>
+  <path d="M107,215 Q100,238 110,260 Q113,250 113,240 Q120,252 118,265 L130,255 Q132,268 140,270 L140,222 Z" fill="#6A3010" opacity="0.7"/>
+  <path d="M183,215 Q190,238 180,260 Q177,250 177,240 Q170,252 172,265 L160,255 Q158,268 150,270 L150,222 Z" fill="#6A3010" opacity="0.7"/>
+  <!-- Face -->
+  <circle cx="134" cy="220" r="5" fill="#3A2010"/>
+  <circle cx="156" cy="220" r="5" fill="#3A2010"/>
+  <circle cx="135.5" cy="218.5" r="2" fill="white" opacity="0.7"/>
+  <circle cx="157.5" cy="218.5" r="2" fill="white" opacity="0.7"/>
+  <path d="M135,233 Q145,239 155,233" stroke="#C06050" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Cheeks -->
+  <circle cx="128" cy="228" r="8" fill="#F09080" opacity="0.35"/>
+  <circle cx="162" cy="228" r="8" fill="#F09080" opacity="0.35"/>
+  <!-- Arms on table -->
+  <path d="M107,285 Q90,310 120,330 Q160,345 190,336" stroke="#F5C8A0" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <!-- Cup person 1 -->
+  <g transform="translate(152,306)">
+    <ellipse cx="18" cy="8" rx="15" ry="5" fill="#E8A0B8"/>
+    <rect x="3" y="8" width="30" height="4" rx="2" fill="#D080A0"/>
+    <path d="M3,12 L0,58 Q0,64 5,64 L31,64 Q36,64 36,58 L33,12 Z" fill="rgba(255,130,170,0.8)"/>
+    <path d="M5,38 L2,58 Q2,62 7,62 L29,62 Q34,62 34,58 L31,38 Z" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="11" cy="55" r="6" fill="rgba(180,30,80,0.8)"/>
+    <circle cx="18" cy="59" r="5" fill="rgba(180,30,80,0.8)"/>
+    <circle cx="25" cy="55" r="5" fill="rgba(180,30,80,0.8)"/>
+    <rect x="24" y="-22" width="4" height="34" rx="2" fill="rgba(255,255,255,0.7)"/>
+  </g>
+
+  <!-- Person 2 (right, male silhouette) -->
+  <!-- Body -->
+  <ellipse cx="458" cy="286" rx="44" ry="22" fill="#4BB8E8" opacity="0.9"/>
+  <!-- Head -->
+  <circle cx="458" cy="218" r="40" fill="#E8B890"/>
+  <!-- Hair (short) -->
+  <path d="M418,210 Q420,175 458,172 Q496,175 498,210 Q488,188 458,186 Q428,188 418,210 Z" fill="#3A2010"/>
+  <!-- Face -->
+  <circle cx="447" cy="214" r="5" fill="#2C1A08"/>
+  <circle cx="469" cy="214" r="5" fill="#2C1A08"/>
+  <circle cx="448.5" cy="212.5" r="2" fill="white" opacity="0.7"/>
+  <circle cx="470.5" cy="212.5" r="2" fill="white" opacity="0.7"/>
+  <path d="M448,228 Q458,235 468,228" stroke="#B06040" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Cheeks -->
+  <circle cx="440" cy="222" r="8" fill="#E0A080" opacity="0.35"/>
+  <circle cx="476" cy="222" r="8" fill="#E0A080" opacity="0.35"/>
+  <!-- Arms on table -->
+  <path d="M498,281 Q516,308 484,328 Q444,343 412,334" stroke="#E8B890" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <!-- Cup person 2 -->
+  <g transform="translate(418,304)">
+    <ellipse cx="18" cy="8" rx="15" ry="5" fill="#A0D4B0"/>
+    <rect x="3" y="8" width="30" height="4" rx="2" fill="#70B880"/>
+    <path d="M3,12 L0,58 Q0,64 5,64 L31,64 Q36,64 36,58 L33,12 Z" fill="rgba(60,180,80,0.8)"/>
+    <path d="M5,38 L2,58 Q2,62 7,62 L29,62 Q34,62 34,58 L31,38 Z" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="11" cy="55" r="6" fill="rgba(20,100,40,0.8)"/>
+    <circle cx="18" cy="59" r="5" fill="rgba(20,100,40,0.8)"/>
+    <circle cx="25" cy="55" r="5" fill="rgba(20,100,40,0.8)"/>
+    <rect x="10" y="-24" width="4" height="36" rx="2" fill="rgba(255,255,255,0.7)"/>
+  </g>
+
+  <!-- Speech bubble / laughter -->
+  <g opacity="0.75">
+    <path d="M210,170 Q220,145 250,145 Q280,145 290,170 Q300,195 275,200 L270,215 L255,200 Q210,200 210,170 Z" fill="white" opacity="0.9"/>
+    <text x="250" y="178" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="700" font-size="14" fill="#C06050">Вкусно!</text>
+    <text x="250" y="194" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#C06050">😄 ❤️</text>
+  </g>
+
+  <!-- Background plants blur -->
+  <ellipse cx="560" cy="250" rx="50" ry="80" fill="rgba(60,120,40,0.3)" filter="url(#soft6)"/>
+  <ellipse cx="40"  cy="260" rx="45" ry="70" fill="rgba(60,120,40,0.3)" filter="url(#soft6)"/>
+
+  <!-- Alpaca logo small, top corner -->
+  <circle cx="560" cy="40" r="26" fill="#4BB8E8" opacity="0.85"/>
+  <text x="560" y="34" text-anchor="middle" font-family="sans-serif" font-size="18" fill="white">🦙</text>
+  <text x="560" y="54" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="9" fill="white" letter-spacing="1.5">ALPACA</text>
+
+  <!-- Warm vignette -->
+  <radialGradient id="vig6" cx="50%" cy="50%" r="70%">
+    <stop offset="55%"  stop-color="transparent"/>
+    <stop offset="100%" stop-color="rgba(200,120,20,0.2)"/>
+  </radialGradient>
+  <rect width="600" height="450" fill="url(#vig6)"/>
+</svg>

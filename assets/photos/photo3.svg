@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <defs>
+    <radialGradient id="atm" cx="55%" cy="40%" r="65%">
+      <stop offset="0%"   stop-color="#FFF3D0"/>
+      <stop offset="60%"  stop-color="#FFE0A0"/>
+      <stop offset="100%" stop-color="#E8C060"/>
+    </radialGradient>
+    <radialGradient id="bokeh1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(255,220,80,0.6)"/>
+      <stop offset="100%" stop-color="rgba(255,220,80,0)"/>
+    </radialGradient>
+    <radialGradient id="bokeh2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.5)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="blur3">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="blur8">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Background warm glow -->
+  <rect width="600" height="450" fill="url(#atm)"/>
+
+  <!-- Background bokeh circles (blurred) -->
+  <g filter="url(#blur8)" opacity="0.7">
+    <circle cx="80"  cy="60"  r="55"  fill="#FFD840"/>
+    <circle cx="520" cy="80"  r="45"  fill="#FFE060"/>
+    <circle cx="140" cy="380" r="40"  fill="#FFCC30"/>
+    <circle cx="480" cy="360" r="50"  fill="#FFD040"/>
+    <circle cx="300" cy="200" r="70"  fill="#FFFFFF" opacity="0.4"/>
+    <circle cx="420" cy="180" r="30"  fill="#FFE880"/>
+    <circle cx="180" cy="220" r="35"  fill="#FFE880"/>
+  </g>
+
+  <!-- Window with warm light -->
+  <rect x="200" y="30" width="200" height="260" rx="6" fill="rgba(255,248,200,0.7)"/>
+  <rect x="200" y="30" width="200" height="260" rx="6" fill="none" stroke="rgba(180,130,40,0.5)" stroke-width="3"/>
+  <line x1="300" y1="30"  x2="300" y2="290" stroke="rgba(180,130,40,0.5)" stroke-width="2"/>
+  <line x1="200" y1="160" x2="400" y2="160" stroke="rgba(180,130,40,0.5)" stroke-width="2"/>
+  <!-- Window glow -->
+  <ellipse cx="300" cy="165" rx="130" ry="160" fill="rgba(255,240,150,0.4)" filter="url(#blur3)"/>
+
+  <!-- Foreground table edge -->
+  <rect x="0" y="380" width="600" height="70" rx="0" fill="#8B6030" opacity="0.9"/>
+  <rect x="0" y="374" width="600" height="10" rx="0" fill="#A07840"/>
+
+  <!-- Cup on table -->
+  <g transform="translate(246, 250)">
+    <ellipse cx="54" cy="12" rx="42" ry="10" fill="#E0D0B0"/>
+    <rect x="12" y="12" width="84" height="6" rx="2" fill="#C8B090"/>
+    <path d="M12,18 L4,126 Q4,134 13,134 L95,134 Q104,134 104,126 L96,18 Z" fill="rgba(75,184,232,0.7)"/>
+    <path d="M14,70 L8,126 Q8,131 15,131 L93,131 Q100,131 100,126 L94,70 Z" fill="rgba(255,255,255,0.35)"/>
+    <!-- Bubbles -->
+    <circle cx="25" cy="118" r="10" fill="rgba(30,60,120,0.7)"/>
+    <circle cx="54" cy="124" r="9"  fill="rgba(30,60,120,0.7)"/>
+    <circle cx="80" cy="116" r="10" fill="rgba(30,60,120,0.7)"/>
+    <!-- Straw -->
+    <rect x="72" y="-50" width="7" height="72" rx="3" fill="white" opacity="0.85"/>
+    <!-- Highlight -->
+    <path d="M16,18 L12,90" stroke="rgba(255,255,255,0.5)" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Coaster -->
+  <ellipse cx="300" cy="390" rx="60" ry="10" fill="rgba(180,140,70,0.5)"/>
+
+  <!-- String lights across top -->
+  <path d="M0,30 Q150,60 300,40 Q450,20 600,50" stroke="#C0A040" stroke-width="1.5" fill="none"/>
+  <!-- Light bulbs on string -->
+  <circle cx="50"  cy="38" r="7"  fill="#FFE880" filter="url(#blur3)" opacity="0.9"/>
+  <circle cx="50"  cy="38" r="4"  fill="#FFE880"/>
+  <circle cx="150" cy="54" r="7"  fill="#FFE880" filter="url(#blur3)" opacity="0.9"/>
+  <circle cx="150" cy="54" r="4"  fill="#FFE880"/>
+  <circle cx="250" cy="43" r="7"  fill="#FFE880" filter="url(#blur3)" opacity="0.9"/>
+  <circle cx="250" cy="43" r="4"  fill="#FFE880"/>
+  <circle cx="350" cy="38" r="7"  fill="#FFE880" filter="url(#blur3)" opacity="0.9"/>
+  <circle cx="350" cy="38" r="4"  fill="#FFE880"/>
+  <circle cx="450" cy="30" r="7"  fill="#FFE880" filter="url(#blur3)" opacity="0.9"/>
+  <circle cx="450" cy="30" r="4"  fill="#FFE880"/>
+  <circle cx="550" cy="44" r="7"  fill="#FFE880" filter="url(#blur3)" opacity="0.9"/>
+  <circle cx="550" cy="44" r="4"  fill="#FFE880"/>
+
+  <!-- Plant silhouette right -->
+  <ellipse cx="540" cy="320" rx="55" ry="80" fill="rgba(60,120,50,0.6)" filter="url(#blur3)"/>
+  <ellipse cx="560" cy="280" rx="40" ry="60" fill="rgba(50,100,40,0.5)" filter="url(#blur3)"/>
+  <ellipse cx="510" cy="300" rx="35" ry="55" fill="rgba(70,140,60,0.5)" filter="url(#blur3)"/>
+  <rect x="538" y="380" width="12" height="30" rx="4" fill="rgba(90,60,20,0.7)"/>
+
+  <!-- Plant silhouette left -->
+  <ellipse cx="60"  cy="340" rx="50" ry="70" fill="rgba(60,120,50,0.55)" filter="url(#blur3)"/>
+  <ellipse cx="40"  cy="300" rx="35" ry="55" fill="rgba(50,100,40,0.5)"  filter="url(#blur3)"/>
+  <rect x="58" y="378" width="11" height="26" rx="4" fill="rgba(90,60,20,0.6)"/>
+
+  <!-- Warm vignette -->
+  <radialGradient id="vig3" cx="50%" cy="50%" r="70%">
+    <stop offset="50%"  stop-color="transparent"/>
+    <stop offset="100%" stop-color="rgba(150,80,0,0.3)"/>
+  </radialGradient>
+  <rect width="600" height="450" fill="url(#vig3)"/>
+</svg>
